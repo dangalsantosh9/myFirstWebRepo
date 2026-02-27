@@ -1,0 +1,16 @@
+meta {
+  name: 404 — Pet not found
+  type: http
+  seq: 11
+}
+
+get {
+  url: http://localhost:9812/pets/9999
+  body: json
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

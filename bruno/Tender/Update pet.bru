@@ -1,0 +1,22 @@
+meta {
+  name: Update pet
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:9812/pets/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Draco"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

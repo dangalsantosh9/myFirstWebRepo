@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Tender",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

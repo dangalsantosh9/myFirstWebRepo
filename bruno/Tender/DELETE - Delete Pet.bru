@@ -1,0 +1,15 @@
+meta {
+  name: DELETE - Delete Pet
+  type: http
+  seq: 12
+}
+
+delete {
+  url: http://localhost:9812/pets/1
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

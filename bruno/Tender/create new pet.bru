@@ -1,0 +1,23 @@
+meta {
+  name: create new pet
+  type: http
+  seq: 8
+}
+
+post {
+  url: http://localhost:9812/pets
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "CookTest",
+    "species": "cat"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

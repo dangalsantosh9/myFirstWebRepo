@@ -1,0 +1,23 @@
+meta {
+  name: Create Pet
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:9812/pets
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Fluffy",
+    "species": "dragon"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

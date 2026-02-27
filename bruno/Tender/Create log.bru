@@ -1,0 +1,24 @@
+meta {
+  name: Create log
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:9812/pets/1/logs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "habitId": 1,
+    "date": "2026-02-26",
+    "note": "Completed workout"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
