@@ -2,10 +2,9 @@
 import 'dotenv/config';
 import express, { Express } from 'express';
 
-import { createPet, deletePet, getPet, listPets, updatePetName } from './controllers/pets.js';
-
-import { createHabit, listHabits } from './controllers/habits.js';
-import { createLog } from './controllers/logs.js';
+import { createHabit, listHabits } from './controllers/habits';
+import { createLog } from './controllers/logs';
+import { createPet, deletePet, getPet, listPets, updatePetName } from './controllers/pets';
 
 const app: Express = express();
 
